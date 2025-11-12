@@ -1,0 +1,119 @@
+
+.kopf {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  height: 40vw;
+  width: 30vw;
+  
+  background: papayawhip;
+  border-radius: 60% 60% 100% 100%;
+}
+
+
+
+.auge {
+  position: absolute;
+  top: 13vw;
+  
+
+  height: 4vw;
+  width: 6vw;
+
+  background:whitesmoke;
+  border-radius: 100%;
+}
+
+
+
+.auge.links {
+  left: 5vw;
+
+}
+.auge.rechts {
+  right:4vw;
+}
+
+.pupille{
+  position: absolute;
+  left: 1.5vw;
+  top: 1vw;
+  height: 3vw;
+  width: 3vw;
+  background: rgb(139,69,19);
+  border-radius: 100%;
+}
+
+.mund {
+  position: absolute;
+  bottom: 8vw;
+  left: 8vw;
+  height: 5vw;
+  width: 14vw;
+  
+  background: plum;
+  box-shadow: inset 0 0 1vw black;
+  border-radius: 10% 10% 50% 50%;
+ 
+}
+
+.hair.links{--c: 85; /* Curvature percentage (must be > 50) */
+  position: absolute;
+  width: 5vw;
+  height: 45vw; /* Shortened to meet the top piece */
+  top: 10vw; /* Starts slightly lower than the top piece's edge to overlap/blend */
+  left: 4vw;
+  background: rgb(128,0,0);
+  
+  /* Creates the curve on the right side of this element */
+  clip-path: ellipse(100% calc(var(--c)*1%) at right);
+}
+
+.hair.rechts {
+  background: rgb(128,0,0);
+  position: absolute;
+  --c: 85; /* Curvature percentage (must be > 50) */
+  width: 5vw;
+  height: 45vw;
+  top: 10vw; /* Starts slightly lower than the top piece's edge to overlap/blend */
+  left: 31vw; /* Positioned relative to the right of the container */
+  
+  /* Creates the curve on the left side of this element */
+  clip-path: ellipse(100% calc(var(--c)*1%) at left);
+ 
+
+  }
+
+/* HTML: <div class="curved-rectangle"></div> */
+.curved-rectangle {
+ --c: 55; /* Curvature percentage (must be > 50) */
+  
+ position: absolute;
+ width: 31vw;
+  height: 15vw;
+  top: -0vw;
+  left: 4.5vw; /* Minor adjustment for center */
+  
+  /* Your original clip-path for the curved top */
+  clip-path: ellipse(calc(var(--c)*1%) 100% at bottom);
+  background: rgb(128,0,0);
+  border-radius: 30%
+}
+
+.nose {
+  width: 10px;
+  height: 12px;
+  border-radius: 50%;
+  background:rgb(255, 159, 4);
+  position: absolute;
+  top: 25vw;
+  left: 20vw;
+}
+.noses {
+  width: 7px;
+  height: 15px;
+  border: 50%;
+  background:rgb(255, 159, 4);
+  border-radius: 50%;
+  position: absolute;
+}
